@@ -1,11 +1,5 @@
-<div class="row">
+<div class="row" *ngFor="let b of books">
   <div class="col-lg-3">
-    <app-items></app-items>
-  </div>
-  <div class="col-lg-3">
-    <app-items></app-items>
-  </div>
-  <div class="col-lg-3">
-    <app-items></app-items>
+    <app-items [ititle]="b.title" [iprice]="b.price" [icontent]="b.content" [istar]="b.star"></app-items>
   </div>
 </div>

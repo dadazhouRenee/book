@@ -1,8 +1,4 @@
 <div>
-  <img src="./assets/img/star-open.png" alt="">
-  <img src="./assets/img/star-open.png" alt="">
-  <img src="./assets/img/star-open.png" alt="">
-  <img src="./assets/img/star-close.png" alt="">
-  <img src="./assets/img/star-close.png" alt="">
-  <span>3星</span>
+  <img *ngFor="let s of stars" [src]="s ? './assets/img/star-open.png':'./assets/img/star-close.png'" alt="">
+  <span>{{sstar}}星</span>
 </div>
